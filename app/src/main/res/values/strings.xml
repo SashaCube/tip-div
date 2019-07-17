@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Tip</string>
+    <string name="total">total</string>
+    <string name="result">Result</string>
+    <string name="barman">Barman</string>
+    <string name="admin">Admin</string>
 </resources>
