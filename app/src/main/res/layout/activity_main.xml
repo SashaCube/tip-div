@@ -89,102 +89,159 @@
                 android:layout_gravity="center"
                 android:layout_margin="8dp"
                 app:cardBackgroundColor="@color/night"
-                android:id="@+id/card_view_list_1"
+                android:id="@+id/card_view_list_25"
                 android:layout_width="330dp"
-                android:layout_height="65dp"
+                android:layout_height="match_parent"
                 app:cardCornerRadius="20dp">
 
-            <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="vertical">
 
-                <TextView
-                        android:padding="20dp"
-                        android:text="@string/admin"
-                        android:textColor="@color/light_gold"
-                        android:textSize="20sp"
-                        android:gravity="start"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:id="@+id/label_text_admin"
+                <android.support.v7.widget.CardView
+                        android:layout_gravity="start"
+                        android:layout_margin="8dp"
+                        app:cardBackgroundColor="@color/dark_grey"
+                        android:id="@+id/card_view_list_1"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
-                <TextView
-                        android:padding="20dp"
-                        android:text="10%"
-                        android:textColor="@color/light_gold"
-                        android:textSize="20sp"
-                        android:gravity="center"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:id="@+id/procent_text"
+                        android:layout_height="50dp"
+                        app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        <TextView
+                                android:padding="10dp"
+                                android:text="@string/admin"
+                                android:textColor="@color/light_gold"
+                                android:textSize="16sp"
+                                android:gravity="start"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:id="@+id/label_text_admin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        <TextView
+                                android:padding="10dp"
+                                android:text="10%"
+                                android:textColor="@color/light_gold"
+                                android:textSize="18sp"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:id="@+id/procent_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        <TextView
+                                android:padding="10dp"
+                                android:text="0"
+                                android:textColor="@color/light_cream"
+                                android:textSize="18sp"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:id="@+id/sum_text_10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                        android:layout_gravity="start"
+                        android:layout_margin="8dp"
+                        app:cardBackgroundColor="@color/dark_grey"
+                        android:id="@+id/card_view_list_2"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
-                <TextView
-                        android:padding="20dp"
-                        android:text="0"
-                        android:textColor="@color/light_cream"
-                        android:textSize="20sp"
-                        android:gravity="center"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:id="@+id/sum_text_10"
+                        android:layout_height="50dp"
+                        app:cardCornerRadius="20dp">
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        <TextView
+                                android:padding="10dp"
+                                android:text="@string/barman"
+                                android:textColor="@color/light_gold"
+                                android:textSize="16sp"
+                                android:gravity="start"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:id="@+id/label_text_barman"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        <TextView
+                                android:padding="10dp"
+                                android:text="15%"
+                                android:textColor="@color/light_gold"
+                                android:textSize="18sp"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:id="@+id/procent_text_barman"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        <TextView
+                                android:padding="10dp"
+                                android:text="0"
+                                android:textColor="@color/light_cream"
+                                android:textSize="18sp"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:id="@+id/sum_text_15"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                        android:orientation="horizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content">
 
-            </LinearLayout>
+                    <TextView
+                            android:padding="20dp"
+                            android:text="@string/aplusb"
+                            android:textColor="@color/light_gold"
+                            android:textSize="18sp"
+                            android:gravity="start"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:id="@+id/label_text_ab"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:padding="20dp"
+                            android:text="25%"
+                            android:textColor="@color/light_gold"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:id="@+id/procent_text_25"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:padding="20dp"
+                            android:text="0"
+                            android:textColor="@color/light_cream"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:id="@+id/sum_text_25"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
 
-
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-                android:layout_gravity="center"
-                android:layout_margin="8dp"
-                app:cardBackgroundColor="@color/night"
-                android:id="@+id/card_view_list_2"
-                android:layout_width="330dp"
-                android:layout_height="65dp"
-                app:cardCornerRadius="20dp">
-            <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                <TextView
-                        android:padding="20dp"
-                        android:text="@string/barman"
-                        android:textColor="@color/light_gold"
-                        android:textSize="20sp"
-                        android:gravity="start"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:id="@+id/label_text_barman"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
-                <TextView
-                        android:padding="20dp"
-                        android:text="15%"
-                        android:textColor="@color/light_gold"
-                        android:textSize="20sp"
-                        android:gravity="center"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:id="@+id/procent_text_barman"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
-                <TextView
-                        android:padding="20dp"
-                        android:text="0"
-                        android:textColor="@color/light_cream"
-                        android:textSize="20sp"
-                        android:gravity="center"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:id="@+id/sum_text_15"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
-
+                </LinearLayout>
             </LinearLayout>
 
         </android.support.v7.widget.CardView>

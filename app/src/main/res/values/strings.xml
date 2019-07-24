@@ -4,4 +4,5 @@
     <string name="result">Result</string>
     <string name="barman">Barman</string>
     <string name="admin">Admin</string>
+    <string name="aplusb">(A+B)/N</string>
 </resources>

@@ -12,11 +12,12 @@ import kotlin.math.roundToInt
 
 class MainActivity : AppCompatActivity() {
 
-    var boolean = false
+    var boolean = true
     lateinit var editText: EditText
     lateinit var text10: TextView
     lateinit var text15: TextView
     lateinit var text75: TextView
+    lateinit var text25: TextView
     lateinit var plusBtn: ImageView
     lateinit var diffBtn: ImageView
     lateinit var counterText: TextView
@@ -30,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         text10 = findViewById(R.id.sum_text_10)
         text15 = findViewById(R.id.sum_text_15)
         text75 = findViewById(R.id.sum_text_75)
+        text25 = findViewById(R.id.sum_text_25)
         plusBtn = findViewById(R.id.plus_button)
         diffBtn = findViewById(R.id.diff_button)
         counterText = findViewById(R.id.count_text_view)
@@ -43,6 +45,10 @@ class MainActivity : AppCompatActivity() {
             update()
         }
         text75.setOnLongClickListener {
+            inverse()
+            update()
+        }
+        text25.setOnLongClickListener {
             inverse()
             update()
         }
@@ -73,10 +79,10 @@ class MainActivity : AppCompatActivity() {
     fun inverse(): Boolean {
         boolean = boolean.not()
 
-        if (boolean) {
+        if (!boolean) {
             Toast.makeText(this, "round to one", Toast.LENGTH_SHORT).show()
         }
-        if (!boolean) {
+        if (boolean) {
             Toast.makeText(this, "round to ten", Toast.LENGTH_SHORT).show()
         }
 
@@ -85,11 +91,12 @@ class MainActivity : AppCompatActivity() {
 
     private fun update(): Boolean {
         var sum = editText.text.toString().toDoubleOrNull() ?: 0.0
-        sum = sum.div(counterText.text.toString().toInt())
+        var divSum = sum.div(counterText.text.toString().toInt())
 
         text10.text = sum.times(0.10).roundToTen(boolean).toString()
         text15.text = sum.times(0.15).roundToTen(boolean).toString()
-        text75.text = sum.times(0.75).roundToTen(boolean).toString()
+        text25.text = divSum.times(0.25).roundToTen(boolean).toString()
+        text75.text = divSum.times(0.75).roundToTen(boolean).toString()
 
         return true
     }
